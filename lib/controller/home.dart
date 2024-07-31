@@ -22,12 +22,12 @@ class HomeState extends State<Home> {
           child: SafeArea(
               child: Container(
                   padding: const EdgeInsets.all(10),
-                  child: const Column(
+                  child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      const Row(
                         children: [
                           Spacer(),
                           Icon(Icons.radio),
@@ -35,7 +35,7 @@ class HomeState extends State<Home> {
                           Icon(Icons.settings),
                         ],
                       ),
-                      Text("My music app"),
+                      myItems[currentIndex].titleForAppBar
                     ],
                   )))),
       body: const Center(child: Text("Mon App")),
